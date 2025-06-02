@@ -43,8 +43,8 @@ export default defineManifest({
   // 你也可以在这里手动定义更复杂的匹配规则
   // content_scripts: [
   //   {
-  //     matches: ['<all_urls>'],
-  //     js: ['src/content/index.tsx'], // 指向内容脚本入口
+  //     matches: ["<all_urls>"],
+  //     js: ["src/content/index.ts"], // 指向内容脚本入口
   //   },
   // ],
 
@@ -61,8 +61,8 @@ export default defineManifest({
   permissions: [
     "storage", // 示例：允许使用 chrome.storage
     "activeTab", // 示例：允许临时访问活动标签页
-    // "tabs", // 按需添加
-    // "scripting", // 如果需要通过 API 注入脚本或 CSS
+    "tabs", // 按需添加
+    "scripting", // 如果需要通过 API 注入脚本或 CSS
   ],
 
   // -------- 主机权限 (Manifest V3 必须) --------

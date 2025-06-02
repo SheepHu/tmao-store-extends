@@ -7,11 +7,13 @@
   "description": "my extends",
   "scripts": {
     "dev": "vite",
+    "start": "vite build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.25.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
